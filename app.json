@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "SensorsApp",
+    "slug": "SensorsApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "pe.edu.utp.sensorsapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "pe.edu.utp.sensorsapp",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "SensorsApp usa tu ubicación para mostrar tus coordenadas, velocidad y distancia recorrida."
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "SensorsApp usa el acelerómetro para detectar movimientos del dispositivo."
+        }
+      ]
+    ]
+  }
+}
